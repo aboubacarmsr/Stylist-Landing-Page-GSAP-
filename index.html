@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a class="logo" href="#">LOGO</a>
+        <img src="images/menu.svg" alt="" class="menu">
+    </header>
+    <div class="main">
+        <div class="content">
+            <div class="text top">
+                <h1 class="name">Elle SWEDEN</h1>
+            </div>
+            <div class="text center">
+                <h3>Meet</h3>
+            </div>
+            <div class="text bottom">
+                <h2 class="anna">Anna Fernandez</h2>
+                <h3 class="stylist">Stylist</h3>
+                <a href="#" class="contact">Contact</a>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="background">
+            <div class="grey"></div>
+            <img src="images/models.jpg" alt="" class="center-image">
+            <img src="images/model_female.jpg" alt="" class="right-image">
+        </div>
+        <div class="overlay">
+            <div class="layer layer-1"></div>
+            <div class="layer layer-2"></div>
+            <div class="layer layer-3"></div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script>
+        gsap.to('.layer-1', {y: '-100vh', delay: .6});
+        gsap.to('.layer-2', {y: '-100vh', delay: .8});
+        gsap.to('.layer-3', {y: '-100vh', delay: 1.0});
+        gsap.to('.overlay', {y: '-100vh', delay: 1.5});
+
+        gsap.fromTo('.name',
+        {x: '-30rem', opacity: 0},
+        {x: 0, opacity: 1, ease: 'back.out(0.1)', delay:1.9});
+
+        gsap.fromTo('.center',
+        {x: '-30rem', opacity: 0},
+        {x: 0, opacity: 1, ease: 'back.out(0.1)', delay:1.9});
+
+        gsap.fromTo('.bottom',
+        {x: '30rem', opacity: 0},
+        {x: 0, opacity: 1, ease: 'back.out(0.1)', delay:1.7});
+    </script>
+</body>
+</html>

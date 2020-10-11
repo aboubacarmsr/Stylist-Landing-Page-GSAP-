@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+    font-family: Oswald, sans-serif;
+}
+
+header {
+    width: 100%;
+    padding: 20px 50px;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    text-decoration: none;
+    color: white;
+}
+
+.menu {
+    width: 2vw;
+    cursor: pointer;
+}
+
+.content{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+
+.text{
+    color: white;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+}
+
+.name{
+    position: relative;
+    top: 80px;
+    left: 50px;
+    width: 300px;
+    font-size: 160px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 0.9;
+}
+
+.center{
+    position: absolute;
+    left: 50px;
+    bottom: 100px;
+    color: #c0bebe;
+}
+
+.bottom{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    left: 50px;
+    bottom: 0px;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.anna{
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.stylist{
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.contact{
+    text-decoration: none;
+    color: black;
+    padding: 30px;
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.line{
+    margin-right: 6em;
+    margin-left: -12em;
+    width: 180px;
+    height: 4px;
+    background-color: black;
+}
+
+.background{
+    position: absolute;
+    z-index: -1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+img{
+    object-fit: cover;
+}
+
+.grey{
+    width: 25vw;
+    background: #3e3636;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    z-index: 99;
+}
+
+.layer{
+    background: black;
+}
+
+.layer-1{
+    flex: 1;
+}
+
+.layer-2{
+    flex: 1;
+}
+
+.layer-3{
+    flex: 1;
+}
